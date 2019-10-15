@@ -150,6 +150,7 @@ message_result_t message_tlv_get_gps_location(const message_t *message, tlv_gps_
     loc->h_msl = (int32_t) ntohl((int32_t) loc->h_msl);
     loc->h_acc = ntohl(loc->h_acc);
     loc->v_acc = ntohl(loc->v_acc);
+    loc->timestamp = (int32_t) ntohl(loc->timestamp);
 
     return MESSAGE_SUCCESS;
 }

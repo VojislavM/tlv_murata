@@ -14,6 +14,7 @@ tlv_gps_location_t loc = {
             .h_msl = 296,
             .h_acc = 1,
             .v_acc = 1,
+            .timestamp = 0;
         };
 
 boolean horizon_gps_flag = false;
